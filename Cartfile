@@ -1,0 +1,3 @@
+github "bignerdranch/Freddy" "zwaldowski/swift_3-preview_6"
+github "realm/realm-cocoa" "master"
+github "justin/Aspen" "swift3.0"

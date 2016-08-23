@@ -7,21 +7,62 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D09474611D6B86FE00A1282B /* PublicationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09474601D6B86FE00A1282B /* PublicationTableViewCell.swift */; };
+		D09474631D6B870E00A1282B /* PublicationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09474621D6B870E00A1282B /* PublicationViewModel.swift */; };
+		D09474651D6B882A00A1282B /* PublicationsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09474641D6B882A00A1282B /* PublicationsDataSource.swift */; };
+		D0E52A3B1D6BC75B00FA5CEF /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E52A3A1D6BC75B00FA5CEF /* Reusable.swift */; };
+		D0E52A3D1D6BC89000FA5CEF /* PublicationTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D0E52A3C1D6BC89000FA5CEF /* PublicationTableViewCell.xib */; };
+		D0E52A3F1D6BCD3500FA5CEF /* SegueHandlerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E52A3E1D6BCD3500FA5CEF /* SegueHandlerType.swift */; };
 		D0EE71B11D68BC4F00D863A1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0EE71B01D68BC4F00D863A1 /* AppDelegate.swift */; };
-		D0EE71B31D68BC4F00D863A1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0EE71B21D68BC4F00D863A1 /* ViewController.swift */; };
+		D0EE71B31D68BC4F00D863A1 /* PublicationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0EE71B21D68BC4F00D863A1 /* PublicationsViewController.swift */; };
 		D0EE71B61D68BC4F00D863A1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0EE71B41D68BC4F00D863A1 /* Main.storyboard */; };
 		D0EE71B81D68BC4F00D863A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0EE71B71D68BC4F00D863A1 /* Assets.xcassets */; };
 		D0EE71BB1D68BC4F00D863A1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0EE71B91D68BC4F00D863A1 /* LaunchScreen.storyboard */; };
+		D0EE71DB1D68BFE400D863A1 /* iDevCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0EE71DA1D68BFE400D863A1 /* iDevCore.framework */; };
+		D0EE71DC1D68BFE400D863A1 /* iDevCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D0EE71DA1D68BFE400D863A1 /* iDevCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D0EE720B1D68C2B300D863A1 /* AuthenticationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0EE720A1D68C2B300D863A1 /* AuthenticationViewController.swift */; };
+		D0EE721B1D68D28D00D863A1 /* iDevData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0EE721A1D68D28D00D863A1 /* iDevData.framework */; };
+		D0EE721C1D68D28D00D863A1 /* iDevData.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D0EE721A1D68D28D00D863A1 /* iDevData.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D0EE721E1D68D28F00D863A1 /* iDevNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0EE721D1D68D28F00D863A1 /* iDevNetwork.framework */; };
+		D0EE721F1D68D28F00D863A1 /* iDevNetwork.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D0EE721D1D68D28F00D863A1 /* iDevNetwork.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		D0EE71DD1D68BFE400D863A1 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				D0EE721C1D68D28D00D863A1 /* iDevData.framework in Embed Frameworks */,
+				D0EE71DC1D68BFE400D863A1 /* iDevCore.framework in Embed Frameworks */,
+				D0EE721F1D68D28F00D863A1 /* iDevNetwork.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		D09474601D6B86FE00A1282B /* PublicationTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PublicationTableViewCell.swift; sourceTree = "<group>"; };
+		D09474621D6B870E00A1282B /* PublicationViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PublicationViewModel.swift; sourceTree = "<group>"; };
+		D09474641D6B882A00A1282B /* PublicationsDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PublicationsDataSource.swift; sourceTree = "<group>"; };
+		D0E52A3A1D6BC75B00FA5CEF /* Reusable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Reusable.swift; path = iDev2016/Reusable.swift; sourceTree = "<group>"; };
+		D0E52A3C1D6BC89000FA5CEF /* PublicationTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PublicationTableViewCell.xib; sourceTree = "<group>"; };
+		D0E52A3E1D6BCD3500FA5CEF /* SegueHandlerType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SegueHandlerType.swift; path = iDev2016/SegueHandlerType.swift; sourceTree = "<group>"; };
 		D0EE71AD1D68BC4F00D863A1 /* iDev2016.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iDev2016.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		D0EE71B01D68BC4F00D863A1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D0EE71B21D68BC4F00D863A1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D0EE71B01D68BC4F00D863A1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = iDev2016/AppDelegate.swift; sourceTree = "<group>"; };
+		D0EE71B21D68BC4F00D863A1 /* PublicationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublicationsViewController.swift; sourceTree = "<group>"; };
 		D0EE71B51D68BC4F00D863A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D0EE71B71D68BC4F00D863A1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D0EE71BA1D68BC4F00D863A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D0EE71BC1D68BC4F00D863A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D0EE71DA1D68BFE400D863A1 /* iDevCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = iDevCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0EE720A1D68C2B300D863A1 /* AuthenticationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AuthenticationViewController.swift; path = iDev2016/AuthenticationViewController.swift; sourceTree = "<group>"; };
+		D0EE720C1D68C63700D863A1 /* Cartfile.resolved */ = {isa = PBXFileReference; lastKnownFileType = text; path = Cartfile.resolved; sourceTree = "<group>"; };
+		D0EE720D1D68C63700D863A1 /* Cartfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
+		D0EE721A1D68D28D00D863A1 /* iDevData.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = iDevData.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0EE721D1D68D28F00D863A1 /* iDevNetwork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = iDevNetwork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,16 +70,35 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0EE721B1D68D28D00D863A1 /* iDevData.framework in Frameworks */,
+				D0EE71DB1D68BFE400D863A1 /* iDevCore.framework in Frameworks */,
+				D0EE721E1D68D28F00D863A1 /* iDevNetwork.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D0E52A401D6BD63500FA5CEF /* Other Stuff */ = {
+			isa = PBXGroup;
+			children = (
+				D0E52A3A1D6BC75B00FA5CEF /* Reusable.swift */,
+				D0E52A3E1D6BCD3500FA5CEF /* SegueHandlerType.swift */,
+			);
+			name = "Other Stuff";
+			sourceTree = "<group>";
+		};
 		D0EE71A41D68BC4F00D863A1 = {
 			isa = PBXGroup;
 			children = (
-				D0EE71AF1D68BC4F00D863A1 /* iDev2016 */,
+				D0EE720D1D68C63700D863A1 /* Cartfile */,
+				D0EE720C1D68C63700D863A1 /* Cartfile.resolved */,
+				D0EE71C21D68BE2400D863A1 /* Application */,
+				D0EE71C41D68BE5800D863A1 /* Token Authentication Controller */,
+				D0EE71AF1D68BC4F00D863A1 /* Publication List View Controller */,
+				D0E52A401D6BD63500FA5CEF /* Other Stuff */,
+				D0EE71C31D68BE2D00D863A1 /* Resources */,
+				D0EE71DE1D68BFE900D863A1 /* Vendor */,
 				D0EE71AE1D68BC4F00D863A1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -51,17 +111,63 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		D0EE71AF1D68BC4F00D863A1 /* iDev2016 */ = {
+		D0EE71AF1D68BC4F00D863A1 /* Publication List View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D0EE71B21D68BC4F00D863A1 /* PublicationsViewController.swift */,
+				D09474601D6B86FE00A1282B /* PublicationTableViewCell.swift */,
+				D09474621D6B870E00A1282B /* PublicationViewModel.swift */,
+				D09474641D6B882A00A1282B /* PublicationsDataSource.swift */,
+				D0E52A3C1D6BC89000FA5CEF /* PublicationTableViewCell.xib */,
+			);
+			name = "Publication List View Controller";
+			path = iDev2016;
+			sourceTree = "<group>";
+		};
+		D0EE71C21D68BE2400D863A1 /* Application */ = {
 			isa = PBXGroup;
 			children = (
 				D0EE71B01D68BC4F00D863A1 /* AppDelegate.swift */,
-				D0EE71B21D68BC4F00D863A1 /* ViewController.swift */,
 				D0EE71B41D68BC4F00D863A1 /* Main.storyboard */,
+			);
+			name = Application;
+			sourceTree = "<group>";
+		};
+		D0EE71C31D68BE2D00D863A1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				D0EE71B71D68BC4F00D863A1 /* Assets.xcassets */,
 				D0EE71B91D68BC4F00D863A1 /* LaunchScreen.storyboard */,
 				D0EE71BC1D68BC4F00D863A1 /* Info.plist */,
 			);
+			name = Resources;
 			path = iDev2016;
+			sourceTree = "<group>";
+		};
+		D0EE71C41D68BE5800D863A1 /* Token Authentication Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D0EE720A1D68C2B300D863A1 /* AuthenticationViewController.swift */,
+			);
+			name = "Token Authentication Controller";
+			sourceTree = "<group>";
+		};
+		D0EE71DE1D68BFE900D863A1 /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				D0EE71DF1D68BFF000D863A1 /* iOS */,
+			);
+			name = Vendor;
+			sourceTree = "<group>";
+		};
+		D0EE71DF1D68BFF000D863A1 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				D0EE721D1D68D28F00D863A1 /* iDevNetwork.framework */,
+				D0EE721A1D68D28D00D863A1 /* iDevData.framework */,
+				D0EE71DA1D68BFE400D863A1 /* iDevCore.framework */,
+			);
+			name = iOS;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,6 +180,8 @@
 				D0EE71A91D68BC4F00D863A1 /* Sources */,
 				D0EE71AA1D68BC4F00D863A1 /* Frameworks */,
 				D0EE71AB1D68BC4F00D863A1 /* Resources */,
+				D0EE71DD1D68BFE400D863A1 /* Embed Frameworks */,
+				D0EE72201D68D29700D863A1 /* Copy Carthage Resources */,
 			);
 			buildRules = (
 			);
@@ -126,19 +234,47 @@
 			files = (
 				D0EE71BB1D68BC4F00D863A1 /* LaunchScreen.storyboard in Resources */,
 				D0EE71B81D68BC4F00D863A1 /* Assets.xcassets in Resources */,
+				D0E52A3D1D6BC89000FA5CEF /* PublicationTableViewCell.xib in Resources */,
 				D0EE71B61D68BC4F00D863A1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		D0EE72201D68D29700D863A1 /* Copy Carthage Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Realm.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RealmSwift.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Aspen.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Freddy.framework",
+			);
+			name = "Copy Carthage Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D0EE71A91D68BC4F00D863A1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D0EE71B31D68BC4F00D863A1 /* ViewController.swift in Sources */,
+				D0EE71B31D68BC4F00D863A1 /* PublicationsViewController.swift in Sources */,
+				D0EE720B1D68C2B300D863A1 /* AuthenticationViewController.swift in Sources */,
+				D0E52A3F1D6BCD3500FA5CEF /* SegueHandlerType.swift in Sources */,
+				D09474631D6B870E00A1282B /* PublicationViewModel.swift in Sources */,
+				D0E52A3B1D6BC75B00FA5CEF /* Reusable.swift in Sources */,
 				D0EE71B11D68BC4F00D863A1 /* AppDelegate.swift in Sources */,
+				D09474611D6B86FE00A1282B /* PublicationTableViewCell.swift in Sources */,
+				D09474651D6B882A00A1282B /* PublicationsDataSource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -151,6 +287,7 @@
 				D0EE71B51D68BC4F00D863A1 /* Base */,
 			);
 			name = Main.storyboard;
+			path = iDev2016;
 			sourceTree = "<group>";
 		};
 		D0EE71B91D68BC4F00D863A1 /* LaunchScreen.storyboard */ = {
@@ -260,6 +397,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 42LH2U5D35;
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/Carthage/Build/iOS";
 				INFOPLIST_FILE = iDev2016/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.justinwme.iDev2016;
@@ -273,6 +411,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 42LH2U5D35;
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/Carthage/Build/iOS";
 				INFOPLIST_FILE = iDev2016/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.justinwme.iDev2016;
@@ -300,6 +439,7 @@
 				D0EE71C11D68BC4F00D863A1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
