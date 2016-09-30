@@ -7,7 +7,7 @@ import iDevCore
 import SafariServices
 
 class PublicationsViewController: UITableViewController {
-    var user: User?
+    var user: iDevData.User?
     var network: NetworkAPI!
     var realm: Realm? {
         didSet {

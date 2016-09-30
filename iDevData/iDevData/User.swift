@@ -41,10 +41,10 @@ public final class User: Object, MediumContent {
 extension User: JSONDecodable {
     public convenience init(json: JSON) throws {
         self.init()
-        id = try json.string("data", "id")
-        username = try json.string("data", "username")
-        name = try json.string("data", "name")
-        urlString = try json.string("data", "url")
-        imageUrlString = try json.string("data", "imageUrl")
+        id = try json.getString(at: "data", "id")
+        username = try json.getString(at:"data", "username")
+        name = try json.getString(at:"data", "name")
+        urlString = try json.getString(at:"data", "url")
+        imageUrlString = try json.getString(at:"data", "imageUrl")
     }
 }

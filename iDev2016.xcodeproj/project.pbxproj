@@ -59,7 +59,6 @@
 		D0EE71BC1D68BC4F00D863A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D0EE71DA1D68BFE400D863A1 /* iDevCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = iDevCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0EE720A1D68C2B300D863A1 /* AuthenticationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AuthenticationViewController.swift; path = iDev2016/AuthenticationViewController.swift; sourceTree = "<group>"; };
-		D0EE720C1D68C63700D863A1 /* Cartfile.resolved */ = {isa = PBXFileReference; lastKnownFileType = text; path = Cartfile.resolved; sourceTree = "<group>"; };
 		D0EE720D1D68C63700D863A1 /* Cartfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
 		D0EE721A1D68D28D00D863A1 /* iDevData.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = iDevData.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0EE721D1D68D28F00D863A1 /* iDevNetwork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = iDevNetwork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -92,7 +91,6 @@
 			isa = PBXGroup;
 			children = (
 				D0EE720D1D68C63700D863A1 /* Cartfile */,
-				D0EE720C1D68C63700D863A1 /* Cartfile.resolved */,
 				D0EE71C21D68BE2400D863A1 /* Application */,
 				D0EE71C41D68BE5800D863A1 /* Token Authentication Controller */,
 				D0EE71AF1D68BC4F00D863A1 /* Publication List View Controller */,
@@ -204,7 +202,7 @@
 				TargetAttributes = {
 					D0EE71AC1D68BC4F00D863A1 = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = 42LH2U5D35;
+						DevelopmentTeam = XBE2EP7T4F;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -396,7 +394,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 42LH2U5D35;
+				DEVELOPMENT_TEAM = XBE2EP7T4F;
 				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/Carthage/Build/iOS";
 				INFOPLIST_FILE = iDev2016/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -410,7 +408,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 42LH2U5D35;
+				DEVELOPMENT_TEAM = XBE2EP7T4F;
 				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/Carthage/Build/iOS";
 				INFOPLIST_FILE = iDev2016/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

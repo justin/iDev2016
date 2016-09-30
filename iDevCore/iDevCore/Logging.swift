@@ -24,10 +24,10 @@ public struct iDevLogger {
         
         // XCode console
         let ttyLogger = ConsoleLogger()
-        Aspen.registerLogger(ttyLogger)
+        Aspen.register(logger: ttyLogger)
         logWarn("ATTACHING TTY LOGGER")
 
         fileLogger = FileLogger()
-        Aspen.registerLogger(fileLogger)
+        Aspen.register(logger: fileLogger)
     }
 }

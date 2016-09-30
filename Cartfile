@@ -1,3 +1,10 @@
-github "bignerdranch/Freddy" "zwaldowski/swift_3-preview_6"
-github "realm/realm-cocoa" "master"
-github "justin/Aspen" "swift3.0"
+#github "bignerdranch/Freddy" "zwaldowski/swift_3-preview_6"
+#github "realm/realm-cocoa" "master"
+#github "justin/Aspen" "swift3.0"
+
+github "bignerdranch/Freddy" ~> 3.0
+github "realm/realm-cocoa"
+github "justin/Aspen"
+
+#carthage update --no-use-binaries
+#carthage bootstrap --platform iOS --no-use-submodules --no-use-binaries
