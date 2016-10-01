@@ -73,12 +73,13 @@ private extension AuthenticationViewController {
         DispatchQueue.main.async {
             self.performSegueWithIdentifier(segueIdentifier: .showPublications, sender: nil)
         }
+        
     }
     
     func showPublications(segue: UIStoryboardSegue) {
         if let vc = segue.destination as? PublicationsViewController,
             let realm = realm,
-            let user =  realm.allObjects(ofType: User.self).first {
+            let user =  realm.objects(User.self).first {
             vc.user = user
             vc.network = network
             vc.realm = realm

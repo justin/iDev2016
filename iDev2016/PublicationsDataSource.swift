@@ -53,15 +53,15 @@ class PublicationsDataSource: NSObject, UITableViewDataSource {
 
 private extension PublicationsDataSource {
     func fetchData() {
-        self.publications = realm.allObjects(ofType: Publication.self)
+        self.publications = realm.objects(Publication.self)
         notificationToken = self.publications.addNotificationBlock { [weak self] (changes: RealmCollectionChange) in
             guard let tableView = self?.tableView else { return }
             switch changes {
-            case .Initial:
+            case .initial:
                 // Results are now populated and can be accessed without blocking the UI
                 tableView.reloadData()
                 break
-            case .Update(_, let deletions, let insertions, let modifications):
+            case .update(_, let deletions, let insertions, let modifications):
                 // Query results have changed, so apply them to the UITableView
                 tableView.beginUpdates()
                 tableView.insertRows(at: insertions.map { IndexPath(row: $0, section: 0) }, with: .automatic)
@@ -69,7 +69,7 @@ private extension PublicationsDataSource {
                 tableView.reloadRows(at: modifications.map { IndexPath(row: $0, section: 0) }, with: .automatic)
                 tableView.endUpdates()
                 break
-            case .Error(let error):
+            case .error(let error):
                 // An error occurred while opening the Realm file on the background worker thread
                 fatalError("\(error)")
                 break

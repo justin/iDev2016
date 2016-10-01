@@ -76,9 +76,9 @@ internal final class ParseJSONOperation<T: JSONDecodable>: Operation {
         
         do {
             // Check if we are getting a dictionary or an array.
-            if let data = try? json.array("data", alongPath: .NullBecomesNil) {
+            if let data = try? json.getArray(at:"data", alongPath: .NullBecomesNil) {
                 parsedObjects = try data!.map(T.init)
-            } else if (try? json.dictionary("data", alongPath: .NullBecomesNil)) != nil {
+            } else if (try? json.getDictionary(at:"data", alongPath: .NullBecomesNil)) != nil {
                 let result = try T(json: json)
                 parsedObjects = [result]
             }

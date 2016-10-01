@@ -53,7 +53,7 @@ public final class NetworkAPI {
      */
     public func getProfile(completionHandler: MediumAPIOperationCompletionHandler?) -> Operation {
         let template = GetUserProfileRequest(accessToken: accessToken)
-        let operation = MediumAPIOperation<User>(requestTemplate: template, session: session, completionHandler: completionHandler)
+        let operation = MediumAPIOperation<iDevData.User>(requestTemplate: template, session: session, completionHandler: completionHandler)
         addToQueue(operation: operation)
         return operation
     }
